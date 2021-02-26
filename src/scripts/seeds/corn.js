@@ -1,28 +1,16 @@
-export const createCorn = (cornObj) => [
+const cornArray = [
     {
-    return (
-        `<article>
-            <h3>${cornObj.name}</h3>
-            <ul>
-                <li>Type: ${cornObj.type}</li>
-                <li>Height: ${cornObj.height} inches</li>
-                <li>Output: ${cornObj.output}</li>
-            </ul>
-        </article>`
-        
-    )
+        type: "Corn",
+        height: 180,
+        output: 6
     },
     {
-        return (
-            `<article>
-                <h3>${cornObj.name}</h3>
-                <ul>
-                    <li>Type: ${cornObj.type}</li>
-                    <li>Height: ${cornObj.height} inches</li>
-                    <li>Output: ${cornObj.output}</li>
-                </ul>
-            </article>`
-            
-        )
+        type: "Corn",
+        height: 180,
+        output: 6
     }
 ]
+
+export const createCorn = () => {
+    return cornArray
+}
